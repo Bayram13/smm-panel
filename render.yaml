@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: smm-panel
+    env: node
+    buildCommand: npm install
+    startCommand: node src/server.js
+    envVars:
+      - key: API_KEY
+        value: your_jap_api_key
+      - key: API_URL
+        value: https://justanotherpanel.com/api/v2
